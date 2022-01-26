@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gonzalo Yacante (gonzaloyacantedev.com) Frontend Developer Page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Gonzalo Yacante">
+    <meta name="copyright" content="Gonzalo Yacante">
+    <meta name="description" content="Sabias que tu peso es distinto en otros planetas?">
+    <meta name="keywords" content="Desarrollo Web, Web Developer, Frontend Developer, Frontend Developer Page, Frontend, Programmer, Programador">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Balanza de mundos</title>
+</head>
+<body>
+    <header>
+        <h1>Calcula tu peso en otro planeta</h1>
+    </header>
+
+    <main class="calculadora">
+        <div class="ingresarPeso">
+            <img src="./assets/planetas/tierra.png" alt="Imagen del planeta tierra">
+            <p>Cuantos kg pesas en la tierra?</p>
+            <input type="number" name="pesoEnLaTierra" id="pesoEnLaTierra" min="0" step="0.01" required>
+        </div>
+
+        <div class="contenedor">
+            <form action="">
+                <div class="selectBox">
+                    <div class="select" id="select">
+                        <img class="planetas" id="extraterrestre" src="./assets/planetas/extraterrestre.png" alt="Imagen de un extraterrestre">
+                        <div class="contenido-select">
+                            <h3 class="titulo">Selecciona el planeta</h3>
+                            <p>Haz click aquí</p>
+                        </div>
+                        <img class="flechita" src="./assets/icons/expand_more.svg" alt="Flecha para abajo">
+                    </div>
+ 
+
+                    <div class="opciones scrollbar" id="opciones">
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/sol.png" alt="Imagen del sol">
+                                <div class="textos">
+                                    <h3 class="titulo">El sol</h3>
+                                    <p class="descripcion">Es la estrella mas grande del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/mercurio.png" alt="Imagen de Mercurio">
+                                <div class="textos">
+                                    <h3 class="titulo">Mercurio</h3>
+                                    <p class="descripcion">Es el planeta Nº1 del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/venus.png" alt="Imagen de Venus">
+                                <div class="textos">
+                                    <h3 class="titulo">Venus</h3>
+                                    <p class="descripcion">Es el planeta Nº2 del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/luna.png" alt="Imagen de La luna">
+                                <div class="textos">
+                                    <h3 class="titulo">La luna</h3>
+                                    <p class="descripcion">Es el satelite natural de la tierra</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/marte.png" alt="Imagen de Marte">
+                                <div class="textos">
+                                    <h3 class="titulo">Marte</h3>
+                                    <p class="descripcion">Es el planeta Nº4 del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/jupiter.png" alt="Imagen de jupiter">
+                                <div class="textos">
+                                    <h3 class="titulo">jupiter</h3>
+                                    <p class="descripcion">Es el planeta Nº5 del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/saturno.png" alt="Imagen de Saturno">
+                                <div class="textos">
+                                    <h3 class="titulo">Saturno</h3>
+                                    <p class="descripcion">Es el planeta Nº6 del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/urano.png" alt="Imagen de Urano">
+                                <div class="textos">
+                                    <h3 class="titulo">Urano</h3>
+                                    <p class="descripcion">Es el planeta Nº7 del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/neptuno.png" alt="Imagen de Neptuno">
+                                <div class="textos">
+                                    <h3 class="titulo">Neptuno</h3>
+                                    <p class="descripcion">Es el planeta Nº8 del sistema solar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="opcion">
+                            <div class="contenido-opcion">
+                                <img class="planetas" src="./assets/planetas/pluton.png" alt="Imagen de Pluton">
+                                <div class="textos">
+                                    <h3 class="titulo">Plutón</h3>
+                                    <p class="descripcion">Es un planeta enano que se encuentra en el cinturón de Kuiper</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <input type="hidden" name="planeta" id="inputSelect" value="">
+            </form>
+        </div>
+
+        <div id="mostrarPeso" class="mostrarPeso">
+            
+        </div>
+    </main>
+
+    <footer>
+        <a target="blank" href="https://gonzaloyacantedev.com/">2022 &copy; Gonzalo Yacante</a>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

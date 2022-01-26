@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #e0e0e0;
+
+    padding: 1rem;
+    height: 100vh;
+    width: 100vw;
+
+    background: #000000 url("./assets/Galaxia.jpg") no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.calculadora {
+    background-color: rgba(17, 17, 17, 0.7);
+    border-radius: 1.5rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 33rem;
+    height: 50rem;
+}
+
+.ingresarPeso {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ingresarPeso img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.ingresarPeso p {
+    margin: 1rem auto;
+}
+
+.ingresarPeso input[type=number]::-webkit-inner-spin-button,
+.ingresarPeso input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ingresarPeso input[type=number] {
+    -moz-appearance:textfield;
+
+    background-color: transparent;
+    color: #e0e0e0;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    height: 4rem;
+    width: 15rem;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    border-bottom: 0.1rem solid #e0e0e0;
+}
+
+.ingresarPeso input:active,
+.ingresarPeso input:focus {
+    background-color: rgba(17, 17, 17, 0.7);
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 28rem;
+    height: 20rem;
+    margin: auto;
+    padding: 4rem 0rem;
+    text-align: start;
+}
+
+.selectBox {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.select {
+    background-color: rgba(17, 17, 17, 0.7);
+    width: 100%;
+    height: 12rem;
+    box-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.16);
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s ease all;
+    margin-bottom: 1.7rem;
+    padding: 3rem 1rem;
+    position: relative;
+    z-index: 200;
+    border: 0.2rem solid transparent;
+}
+
+.select.active,
+.select:hover {
+    box-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.16);
+    border: 0.2rem solid #e0e0e0;
+}
+
+.select.active:before {
+    content: "";
+    display: block;
+    height: 0rem;
+    width: 0rem;
+    border-top: 1.5rem solid #e0e0e0;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-left: 1.5rem solid transparent;
+    position: absolute;
+    bottom: -3rem;
+    left: calc(50% - 1.5rem);
+}
+
+.flechita{
+    height: 3rem;
+    width: 3rem;
+}
+
+.planetas {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+}
+
+.ocultarExtraterrestre {
+    display: none;
+}
+
+.titulo {
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.descripcion {
+    font-size: 1.4rem;
+    color: #e0e0e0;
+}
+
+.opciones {
+    background-color: rgba(17, 17, 17, 0.7);
+    border-radius: 1rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,.16);
+    max-height: 30rem;
+    overflow: auto;
+    z-index: 100;
+    width: 100%;
+    display: none;
+}
+
+.opciones.active {
+    display: block;
+    animation: fadeIn .3s forwards;
+}
+
+/* Tamaño del scroll */
+.scrollbar::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+/* Estilos barra (thumb) de scroll */
+.scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(75, 75, 75, 0.65);
+    border-radius: 0.5rem;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(233, 233, 233, 0.8);
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+.scrollbar::-webkit-scrollbar-track {
+    background: #212529;
+}
+
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20rem) scale(.5);
+    }
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.contenido-opcion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: .2s ease all;
+}
+
+.opciones .contenido-opcion {
+    padding: 2rem;
+}
+
+.opciones .contenido-opcion:hover {
+    background-color: #e0e0e0;
+}
+
+.opciones .contenido-opcion:hover .titulo,
+.opciones .contenido-opcion:hover .descripcion {
+    color: #000000;
+}
+
+footer {
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
